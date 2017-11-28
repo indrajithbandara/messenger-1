@@ -2,3 +2,89 @@
 @import "_typography";
 @import "_mixins";
 @import "_media";
+
+
+/* Main Navigation */
+#main_navigation{ 
+	background-image: linear-gradient(180deg, rgba(54, 61, 71, .84), rgba(54, 61, 71, .84)),  url(../img/bg-animation.gif);
+	height: 50px;
+	.navbar-brand{
+		img{
+			width: 36px;
+			height: 36px;
+			margin-top: -8px;
+		}
+	}
+	.navbar-toggle{
+		color: $white;
+		font-size: 24px;
+		padding-top: 0px;
+	}
+	.navbar-nav{
+		li{	
+			a{
+				color: $white;
+				@include transition(all ease 0.4s);
+				&:hover{
+					text-decoration: none;
+					background-color: grey;
+					@include transition(all ease 0.4s);
+				}&:active{
+					background-color: grey;
+				}&:focus{
+					background-color: grey;
+				}
+				.messages{
+					color: $yellow;
+				}
+			}
+			.btn-default{
+				background-color: $white;
+				color: $grey;
+				padding: 10px 20px;
+				border-radius: 0px;
+				margin-top: 4px;
+				margin-right: 10px;
+				&:hover{
+					background-color: grey;
+					color: $white;
+					@include transition(all ease 0.4s);
+				}&:active{
+					background-color: grey;
+					color: $white;
+				}&:focus{
+					background-color: grey;
+					color: $white;
+				}
+				i{
+					padding-right: 6px;
+				}
+			}
+			.admin{
+				padding: 11px 10px;
+				margin-right: 30px;
+				img{
+					width: 27px;
+					height: 27px;
+				}
+			}
+			.divider{
+				border-left: 1px solid $white;
+			    height: 35px;
+			    position: absolute;
+			    top: 8px;
+			    right: 10px;
+			}
+		}
+		.home{
+			font-size: 23px;
+			margin-right: 10px;
+			a{
+				&:hover{
+					background-color: inherit;
+					color: $yellow;
+				}
+			}
+		}
+	}
+}

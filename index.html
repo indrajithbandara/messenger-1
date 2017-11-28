@@ -14,7 +14,41 @@
     <link rel="stylesheet" href="css/_styles.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- Main Navigation -->
+
+    <nav id="main_navigation">
+      <div class="container-fluid">
+        <div class="navbar navbar-static-top">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_responsive">
+              <span class="fa fa-bars"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+              <img src="img/logo.png" alt="Company Logo">
+            </a> <!-- End of Logo -->
+          </div>  <!-- End of Navbar Header -->
+          <div class="collapse navbar-collapse" id="nav_responsive">
+            <ul class="nav navbar-nav">
+              <li><a href="#"><i class="fa fa-inbox"></i> Email</a></li>
+              <li><a href="#"><i class="fa fa-connectdevelop"></i> Connect</a></li>
+              <li><a href="#"><i class="messages">1</i><i class="fa fa-weixin messages"></i> Messanger</a></li>
+            </ul> <!-- End of Left Side of Navbar -->
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="btn btn-default"><i class="fa fa-power-off"></i> Log Out</a></li>
+              <li class="home"><a href="#"><i class="fa fa-home"></i></a></li>
+              <li><i class="divider"></i></li>
+              <li>
+                <a href="#" class="admin">
+                  <img src="img/admin.png" alt="Profile Picture">
+                  Stefan Omerovic
+                  <i class="fa fa-chevron-down"></i>
+                </a>
+              </li>
+            </ul>  <!-- End of Right Side of Navbar -->
+          </div>
+        </div>  <!-- End of Navbar -->
+      </div>  <!-- End of Container -->
+    </nav>  <!-- End of Main Navigation -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

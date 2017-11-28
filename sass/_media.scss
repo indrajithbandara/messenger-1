@@ -2,7 +2,27 @@
 @media screen
 and ( min-width: 320px )
 and ( max-width: 480px ){
-
+	#main_navigation{
+		height: 60px !important;
+		.container-fluid{
+			padding: 0px !important;
+		}
+		.navbar-collapse{
+			background-color: darken( $white, 5% ); 
+		}
+		.navbar-nav{
+			li{
+				a{
+					color: $grey !important; 
+					text-align: center;
+					margin: 0px !important;
+				}
+				.admin{
+					margin: 0px !important;
+				}
+			}
+		}
+	}
 }
 
 /* Small Screens Landscape */
@@ -17,7 +37,32 @@ and ( orientation: landscape ){
 @media screen
 and ( min-width: 481px )
 and ( max-width: 767px ){
-
+	#main_navigation{
+		height: 60px !important;
+		.container-fluid{
+			padding: 0px !important;
+		}
+		.navbar-collapse{
+			background-color: darken( $white, 5% ); 
+		}
+		.navbar-nav{
+			li{
+				a{
+					color: $grey !important; 
+					text-align: center;
+					margin: 0px !important;
+				}
+				.btn-default{
+					max-width: 300px;
+					display: block;
+					margin: 0 auto !important;
+				}
+				.admin{
+					margin: 0px !important;
+				}
+			}
+		}
+	}
 }
 
 /* Smarth Phones Landscape */
@@ -32,7 +77,18 @@ and ( orientation: landscape ){
 @media screen
 and ( min-width: 768px )
 and ( max-width: 1024px ){
-
+	#main_navigation{
+		.navbar-nav{
+			li{	
+				.admin{
+					margin-right: 10px !important;
+				}
+				.home{
+					margin-right: 0px !important;
+				}
+			}
+		}
+	}
 }
 
 /* Tablets Landscape */

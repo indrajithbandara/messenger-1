@@ -1,8 +1,123 @@
 /* Small Screens */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #main_navigation {
+    height: 60px !important; }
+    #main_navigation .container-fluid {
+      padding: 0px !important; }
+    #main_navigation .navbar-collapse {
+      background-color: #f2f2f2; }
+    #main_navigation .navbar-nav li a {
+      color: #aaaaaa !important;
+      text-align: center;
+      margin: 0px !important; }
+    #main_navigation .navbar-nav li .admin {
+      margin: 0px !important; } }
+
 /* Small Screens Landscape */
 /* Smarth Phones */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #main_navigation {
+    height: 60px !important; }
+    #main_navigation .container-fluid {
+      padding: 0px !important; }
+    #main_navigation .navbar-collapse {
+      background-color: #f2f2f2; }
+    #main_navigation .navbar-nav li a {
+      color: #aaaaaa !important;
+      text-align: center;
+      margin: 0px !important; }
+    #main_navigation .navbar-nav li .btn-default {
+      max-width: 300px;
+      display: block;
+      margin: 0 auto !important; }
+    #main_navigation .navbar-nav li .admin {
+      margin: 0px !important; } }
+
 /* Smarth Phones Landscape */
 /* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #main_navigation .navbar-nav li .admin {
+    margin-right: 10px !important; }
+  #main_navigation .navbar-nav li .home {
+    margin-right: 0px !important; } }
+
 /* Tablets Landscape */
 /* Laptops */
 /* Laptops Landscape */
+/* Main Navigation */
+#main_navigation {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 61, 71, 0.84)), to(rgba(54, 61, 71, 0.84))), url(../img/bg-animation.gif);
+  background-image: -webkit-linear-gradient(top, rgba(54, 61, 71, 0.84), rgba(54, 61, 71, 0.84)), url(../img/bg-animation.gif);
+  background-image: -o-linear-gradient(top, rgba(54, 61, 71, 0.84), rgba(54, 61, 71, 0.84)), url(../img/bg-animation.gif);
+  background-image: linear-gradient(180deg, rgba(54, 61, 71, 0.84), rgba(54, 61, 71, 0.84)), url(../img/bg-animation.gif);
+  height: 50px; }
+  #main_navigation .navbar-brand img {
+    width: 36px;
+    height: 36px;
+    margin-top: -8px; }
+  #main_navigation .navbar-toggle {
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 0px; }
+  #main_navigation .navbar-nav li a {
+    color: #ffffff;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s; }
+    #main_navigation .navbar-nav li a:hover {
+      text-decoration: none;
+      background-color: grey;
+      -webkit-transition: all ease 0.4s;
+      -moz-transition: all ease 0.4s;
+      -ms-transition: all ease 0.4s;
+      -o-transition: all ease 0.4s;
+      transition: all ease 0.4s; }
+    #main_navigation .navbar-nav li a:active {
+      background-color: grey; }
+    #main_navigation .navbar-nav li a:focus {
+      background-color: grey; }
+    #main_navigation .navbar-nav li a .messages {
+      color: #e2a62b; }
+  #main_navigation .navbar-nav li .btn-default {
+    background-color: #ffffff;
+    color: #aaaaaa;
+    padding: 10px 20px;
+    border-radius: 0px;
+    margin-top: 4px;
+    margin-right: 10px; }
+    #main_navigation .navbar-nav li .btn-default:hover {
+      background-color: grey;
+      color: #ffffff;
+      -webkit-transition: all ease 0.4s;
+      -moz-transition: all ease 0.4s;
+      -ms-transition: all ease 0.4s;
+      -o-transition: all ease 0.4s;
+      transition: all ease 0.4s; }
+    #main_navigation .navbar-nav li .btn-default:active {
+      background-color: grey;
+      color: #ffffff; }
+    #main_navigation .navbar-nav li .btn-default:focus {
+      background-color: grey;
+      color: #ffffff; }
+    #main_navigation .navbar-nav li .btn-default i {
+      padding-right: 6px; }
+  #main_navigation .navbar-nav li .admin {
+    padding: 11px 10px;
+    margin-right: 30px; }
+    #main_navigation .navbar-nav li .admin img {
+      width: 27px;
+      height: 27px; }
+  #main_navigation .navbar-nav li .divider {
+    border-left: 1px solid #ffffff;
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    right: 10px; }
+  #main_navigation .navbar-nav .home {
+    font-size: 23px;
+    margin-right: 10px; }
+    #main_navigation .navbar-nav .home a:hover {
+      background-color: inherit;
+      color: #e2a62b; }
