@@ -89,6 +89,85 @@
 	}
 }
 
+/*	LEFT MESSENGER SIDEBAR	*/
+#left_messenger_sidebar{
+	width: 320px;
+	position: absolute;
+	left: 0;
+	border-right: 1px solid $border-color;
+	.scrollbar{
+		overflow: scroll;
+		overflow-x: hidden;
+		height: 640px;
+		&::-webkit-scrollbar {
+		background-color: $white;
+		width: 3px !important;
+		}&::-webkit-scrollbar-thumb{
+			background-color: $blue;
+			height: 200px !important;
+			width: 3px;
+		}
+	}
+	#left_top_section{
+		border-bottom: 1px solid $border-color;
+		padding: 10px 5px;
+		input{
+			width: 100%;
+			padding: 5px;
+			color: $grey;
+			&:active{
+				outline: 0;
+			}
+			&:focus{
+				outline: 0;
+			}&::-webkit-input-placeholder{
+				color: $grey;
+			}
+		}
+	}
+	#left_main_section{
+		padding: 10px;
+		.media{
+			padding: 0px 10px;
+		}
+		.unread-message{
+			border-left: 3px solid $yellow;
+		}
+		.media-left{
+			img{
+				border: 3px solid $grey;
+			}
+			.green-border{
+				border: 3px solid $green;
+			}
+		}
+		.media-body{
+			.media-heading{
+				color: $black;
+				font-weight: bold;
+				font-size: 14px;
+				span{
+					float: right;
+					font-size: 12px;
+					color: $blue;
+				}
+			}
+			p{
+				float: left;
+				max-width: 200px;
+			}
+			.bold-text{
+				font-weight: bold;
+			}
+			a{
+				img{
+					float: right;
+				}
+			}
+		}
+	}
+}
+
 /* RIGHT MESSENGER SIDEBAR */
 #right_messenger_sidebar{
 	width: 320px;
@@ -185,8 +264,8 @@
 
 /* MAIN CONTENT MESSENGER */
 #main_content_messenger{
-	text-align: right;
 	padding-right: 320px;
+	padding-left: 320px;
 	@include transition(all ease 0.4s);
 }
 
