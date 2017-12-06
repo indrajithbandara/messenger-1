@@ -174,10 +174,12 @@
 	position: absolute;
 	right: 0;
 	border-left: 1px solid $border-color;
+	margin-top: -10px;
 	@include transition(all ease 0.4s);
 	#sidebar_top_section{
 		border-bottom: 1px solid $border-color;
 		text-align: center;
+		padding: 3px 0px;
 		a{
 			font-size: 34px;
 			color: $grey-blue;
@@ -187,7 +189,7 @@
 	#options{
 		border-bottom: 1px solid $border-color;
 		padding-left: 5px;
-		padding-top: 15px;
+		padding-top: 10px;
 		color: $grey;
 		input{
 			width: 250px;
@@ -267,6 +269,73 @@
 	padding-right: 320px;
 	padding-left: 320px;
 	@include transition(all ease 0.4s);
+	#main_top_section{
+		border-bottom: 1px solid $border-color;
+		text-align: center;
+		padding: 0px 10px;
+		h4{
+			color: $black;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 14px;
+		}
+		p{
+			font-size: 12px;
+			line-height: 10px;
+		}
+		#menu_toggle{
+			img{
+				float: right;
+				margin-top: -45px !important;
+			}
+		}
+	}
+	#more-messages{
+		text-align: center;
+		.more-messages{
+			background-color: $blue;
+			padding: 3px 15px;
+			color: $white;
+			border-radius: 98px;
+			text-decoration: none;
+		}
+	}
+	#messages{
+		padding: 10px 20px 10px 10px;
+		.media{
+			border-bottom: 1px solid $border-color;
+			padding-left: 15px;
+			.media-left{
+				img{
+					border: 3px solid $grey;
+				}
+				.green-border{
+					border: 3px solid $green;
+				}
+			}
+			.media-body{
+				padding-left: 10px;
+				.media-heading{
+					color: $black;
+					font-weight: bold;
+					font-size: 16px;
+					span{
+						font-size: 11px;
+						color: $grey;
+						font-weight: 300;
+						padding-left: 5px;
+					}
+				}
+				p{
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 25px;
+					max-width: 90%;
+				}
+			}
+		}
+	}
 }
 
 /*	TOGGLE SIDEBAR	*/

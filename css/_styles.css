@@ -184,6 +184,7 @@
   position: absolute;
   right: 0;
   border-left: 1px solid #cacad0;
+  margin-top: -10px;
   -webkit-transition: all ease 0.4s;
   -moz-transition: all ease 0.4s;
   -ms-transition: all ease 0.4s;
@@ -191,7 +192,8 @@
   transition: all ease 0.4s; }
   #right_messenger_sidebar #sidebar_top_section {
     border-bottom: 1px solid #cacad0;
-    text-align: center; }
+    text-align: center;
+    padding: 3px 0px; }
     #right_messenger_sidebar #sidebar_top_section a {
       font-size: 34px;
       color: #6a859c;
@@ -199,7 +201,7 @@
   #right_messenger_sidebar #options {
     border-bottom: 1px solid #cacad0;
     padding-left: 5px;
-    padding-top: 15px;
+    padding-top: 10px;
     color: #aaaaaa; }
     #right_messenger_sidebar #options input {
       width: 250px;
@@ -268,6 +270,55 @@
   -ms-transition: all ease 0.4s;
   -o-transition: all ease 0.4s;
   transition: all ease 0.4s; }
+  #main_content_messenger #main_top_section {
+    border-bottom: 1px solid #cacad0;
+    text-align: center;
+    padding: 0px 10px; }
+    #main_content_messenger #main_top_section h4 {
+      color: #192024;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px; }
+    #main_content_messenger #main_top_section p {
+      font-size: 12px;
+      line-height: 10px; }
+    #main_content_messenger #main_top_section #menu_toggle img {
+      float: right;
+      margin-top: -45px !important; }
+  #main_content_messenger #more-messages {
+    text-align: center; }
+    #main_content_messenger #more-messages .more-messages {
+      background-color: #178ed3;
+      padding: 3px 15px;
+      color: #ffffff;
+      border-radius: 98px;
+      text-decoration: none; }
+  #main_content_messenger #messages {
+    padding: 10px 20px 10px 10px; }
+    #main_content_messenger #messages .media {
+      border-bottom: 1px solid #cacad0;
+      padding-left: 15px; }
+      #main_content_messenger #messages .media .media-left img {
+        border: 3px solid #aaaaaa; }
+      #main_content_messenger #messages .media .media-left .green-border {
+        border: 3px solid #4cc77f; }
+      #main_content_messenger #messages .media .media-body {
+        padding-left: 10px; }
+        #main_content_messenger #messages .media .media-body .media-heading {
+          color: #192024;
+          font-weight: bold;
+          font-size: 16px; }
+          #main_content_messenger #messages .media .media-body .media-heading span {
+            font-size: 11px;
+            color: #aaaaaa;
+            font-weight: 300;
+            padding-left: 5px; }
+        #main_content_messenger #messages .media .media-body p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 25px;
+          max-width: 90%; }
 
 /*	TOGGLE SIDEBAR	*/
 #wrapper.toggle #right_messenger_sidebar {
