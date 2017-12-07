@@ -44,6 +44,9 @@
 /* Tablets Landscape */
 /* Laptops */
 /* Laptops Landscape */
+body {
+  overflow: hidden; }
+
 /* MAIN NAVIGATION */
 #main_navigation {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 61, 71, 0.84)), to(rgba(54, 61, 71, 0.84))), url(../img/bg-animation.gif);
@@ -141,7 +144,7 @@
       width: 3px; }
   #left_messenger_sidebar #left_top_section {
     border-bottom: 1px solid #cacad0;
-    padding: 10px 5px; }
+    padding: 12px 5px; }
     #left_messenger_sidebar #left_top_section input {
       width: 100%;
       padding: 5px;
@@ -295,7 +298,21 @@
       border-radius: 98px;
       text-decoration: none; }
   #main_content_messenger #messages {
-    padding: 10px 20px 10px 10px; }
+    padding: 10px 20px 10px 10px;
+    height: 562px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.89)), to(rgba(255, 255, 255, 0.89))), url("../img/world_map.png");
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)), url("../img/world_map.png");
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)), url("../img/world_map.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)), url("../img/world_map.png");
+    overflow-x: hidden;
+    overflow: scroll; }
+    #main_content_messenger #messages::-webkit-scrollbar {
+      background-color: #ffffff;
+      width: 3px !important; }
+    #main_content_messenger #messages::-webkit-scrollbar-thumb {
+      background-color: #178ed3;
+      height: 200px !important;
+      width: 3px; }
     #main_content_messenger #messages .media {
       border-bottom: 1px solid #cacad0;
       padding-left: 15px; }
@@ -319,6 +336,23 @@
           font-size: 14px;
           line-height: 25px;
           max-width: 90%; }
+  #main_content_messenger #compose_message {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-top: 1px solid #cacad0; }
+    #main_content_messenger #compose_message a {
+      padding: 0px 15px 0px 10px; }
+      #main_content_messenger #compose_message a img {
+        margin-top: -50px !important; }
+      #main_content_messenger #compose_message a .smiley {
+        opacity: 0.3; }
+      #main_content_messenger #compose_message a .upload {
+        opacity: 0.8; }
+    #main_content_messenger #compose_message textarea {
+      width: 60%;
+      display: inline-block;
+      border: 2px solid #bec3c7;
+      border-radius: 8px; }
 
 /*	TOGGLE SIDEBAR	*/
 #wrapper.toggle #right_messenger_sidebar {
