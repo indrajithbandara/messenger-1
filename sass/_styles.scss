@@ -96,11 +96,12 @@ body{
 	width: 320px;
 	position: absolute;
 	left: 0;
+	margin-top: -10px;
 	border-right: 1px solid $border-color;
 	.scrollbar{
 		overflow: scroll;
 		overflow-x: hidden;
-		height: 640px;
+		height: 645px;
 		&::-webkit-scrollbar {
 		background-color: $white;
 		width: 3px !important;
@@ -112,7 +113,7 @@ body{
 	}
 	#left_top_section{
 		border-bottom: 1px solid $border-color;
-		padding: 12px 5px;
+		padding: 10px 5px;
 		input{
 			width: 100%;
 			padding: 5px;
@@ -131,6 +132,7 @@ body{
 		padding: 10px;
 		.media{
 			padding: 0px 10px;
+			overflow: visible !important;
 		}
 		.unread-message{
 			border-left: 3px solid $yellow;
@@ -144,6 +146,8 @@ body{
 			}
 		}
 		.media-body{
+			cursor: pointer;
+			overflow: visible !important;
 			.media-heading{
 				color: $black;
 				font-weight: bold;
@@ -152,6 +156,12 @@ body{
 					float: right;
 					font-size: 12px;
 					color: $blue;
+				}
+			}
+			.dropdown{
+				.dropdown-menu{
+					margin-left: 70px;
+					margin-top: 20px;
 				}
 			}
 			p{
@@ -305,7 +315,7 @@ body{
 	}
 	#messages{
 		padding: 10px 20px 10px 10px;
-		height: 562px;
+		height: 472px;
 		background: linear-gradient( rgba(255, 255, 255, 0.89),  rgba(255, 255, 255, 0.89)), url('../img/world_map.png');
 		overflow-x: hidden;
 		overflow: scroll;
@@ -373,6 +383,16 @@ body{
 			border: 2px solid $message-border;
 			border-radius: 8px;
 		}
+	}
+	#add_section{
+		padding: 10px;
+		color: $white;
+		font-size: 50px;
+		text-align: center;
+		background-color: red;
+		border-left: 1px solid $border-color;
+		border-right: 1px solid $border-color;
+		border-top: 1px solid $border-color;
 	}
 }
 

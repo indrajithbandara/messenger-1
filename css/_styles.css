@@ -130,11 +130,12 @@ body {
   width: 320px;
   position: absolute;
   left: 0;
+  margin-top: -10px;
   border-right: 1px solid #cacad0; }
   #left_messenger_sidebar .scrollbar {
     overflow: scroll;
     overflow-x: hidden;
-    height: 640px; }
+    height: 645px; }
     #left_messenger_sidebar .scrollbar::-webkit-scrollbar {
       background-color: #ffffff;
       width: 3px !important; }
@@ -144,7 +145,7 @@ body {
       width: 3px; }
   #left_messenger_sidebar #left_top_section {
     border-bottom: 1px solid #cacad0;
-    padding: 12px 5px; }
+    padding: 10px 5px; }
     #left_messenger_sidebar #left_top_section input {
       width: 100%;
       padding: 5px;
@@ -158,28 +159,35 @@ body {
   #left_messenger_sidebar #left_main_section {
     padding: 10px; }
     #left_messenger_sidebar #left_main_section .media {
-      padding: 0px 10px; }
+      padding: 0px 10px;
+      overflow: visible !important; }
     #left_messenger_sidebar #left_main_section .unread-message {
       border-left: 3px solid #e2a62b; }
     #left_messenger_sidebar #left_main_section .media-left img {
       border: 3px solid #aaaaaa; }
     #left_messenger_sidebar #left_main_section .media-left .green-border {
       border: 3px solid #4cc77f; }
-    #left_messenger_sidebar #left_main_section .media-body .media-heading {
-      color: #192024;
-      font-weight: bold;
-      font-size: 14px; }
-      #left_messenger_sidebar #left_main_section .media-body .media-heading span {
-        float: right;
-        font-size: 12px;
-        color: #178ed3; }
-    #left_messenger_sidebar #left_main_section .media-body p {
-      float: left;
-      max-width: 200px; }
-    #left_messenger_sidebar #left_main_section .media-body .bold-text {
-      font-weight: bold; }
-    #left_messenger_sidebar #left_main_section .media-body a img {
-      float: right; }
+    #left_messenger_sidebar #left_main_section .media-body {
+      cursor: pointer;
+      overflow: visible !important; }
+      #left_messenger_sidebar #left_main_section .media-body .media-heading {
+        color: #192024;
+        font-weight: bold;
+        font-size: 14px; }
+        #left_messenger_sidebar #left_main_section .media-body .media-heading span {
+          float: right;
+          font-size: 12px;
+          color: #178ed3; }
+      #left_messenger_sidebar #left_main_section .media-body .dropdown .dropdown-menu {
+        margin-left: 70px;
+        margin-top: 20px; }
+      #left_messenger_sidebar #left_main_section .media-body p {
+        float: left;
+        max-width: 200px; }
+      #left_messenger_sidebar #left_main_section .media-body .bold-text {
+        font-weight: bold; }
+      #left_messenger_sidebar #left_main_section .media-body a img {
+        float: right; }
 
 /* RIGHT MESSENGER SIDEBAR */
 #right_messenger_sidebar {
@@ -299,7 +307,7 @@ body {
       text-decoration: none; }
   #main_content_messenger #messages {
     padding: 10px 20px 10px 10px;
-    height: 562px;
+    height: 472px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.89)), to(rgba(255, 255, 255, 0.89))), url("../img/world_map.png");
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)), url("../img/world_map.png");
     background: -o-linear-gradient(rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)), url("../img/world_map.png");
@@ -353,6 +361,15 @@ body {
       display: inline-block;
       border: 2px solid #bec3c7;
       border-radius: 8px; }
+  #main_content_messenger #add_section {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    background-color: red;
+    border-left: 1px solid #cacad0;
+    border-right: 1px solid #cacad0;
+    border-top: 1px solid #cacad0; }
 
 /*	TOGGLE SIDEBAR	*/
 #wrapper.toggle #right_messenger_sidebar {
