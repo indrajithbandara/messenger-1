@@ -159,9 +159,10 @@ body{
 				}
 			}
 			.dropdown{
+				display: block;
+				float: right;
 				.dropdown-menu{
-					margin-left: 70px;
-					margin-top: 20px;
+					margin-left: -150px !important;
 				}
 			}
 			p{

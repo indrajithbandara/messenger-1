@@ -23,6 +23,16 @@ and ( max-width: 480px ){
 			}
 		}
 	}
+	#left_messenger_sidebar{
+		margin-top: 0px !important;
+		width: 100% !important;
+		.scrollbar{
+			height: 350px !important;
+		}
+	}
+	#wrapper{
+		display: none;
+	}
 }
 
 /* Small Screens Landscape */
@@ -30,7 +40,20 @@ and ( max-width: 480px ){
 and ( min-width: 320px )
 and ( max-width: 480px )
 and ( orientation: landscape ){
-	
+	#left_messenger_sidebar{
+		.scrollbar{
+			height: 250px !important;
+		}
+		#left_main_section{
+			.media{
+				.media-body{
+					p{
+						max-width: 100% !important;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Smarth Phones */
@@ -63,6 +86,25 @@ and ( max-width: 767px ){
 			}
 		}
 	}
+	#left_messenger_sidebar{
+		margin-top: -5px !important;
+		width: 100% !important;
+		.scrollbar{
+			height: 650px !important;
+		}
+		#left_main_section{
+			.media{
+				.media-body{
+					p{
+						max-width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+	#wrapper{
+		display: none;
+	}
 }
 
 /* Smarth Phones Landscape */
@@ -70,7 +112,13 @@ and ( max-width: 767px ){
 and ( min-width: 481px )
 and ( max-width: 767px )
 and ( orientation: landscape ){
-	
+	#left_messenger_sidebar{
+		margin-top: -5px !important;
+		width: 100% !important;
+		.scrollbar{
+			height: 350px !important;
+		}
+	}
 }
 
 /* Tablets */
@@ -88,6 +136,25 @@ and ( max-width: 1024px ){
 				}
 			}
 		}
+	}
+	#left_messenger_sidebar{
+		margin-top: 0px !important;
+		width: 100% !important;
+		.scrollbar{
+			height: 650px !important;
+		}
+		#left_main_section{
+			.media{
+				.media-body{
+					p{
+						max-width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+	#wrapper{
+		display: none;
 	}
 }
 

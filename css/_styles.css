@@ -11,9 +11,22 @@
       text-align: center;
       margin: 0px !important; }
     #main_navigation .navbar-nav li .admin {
-      margin: 0px !important; } }
+      margin: 0px !important; }
+  #left_messenger_sidebar {
+    margin-top: 0px !important;
+    width: 100% !important; }
+    #left_messenger_sidebar .scrollbar {
+      height: 350px !important; }
+  #wrapper {
+    display: none; } }
 
 /* Small Screens Landscape */
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #left_messenger_sidebar .scrollbar {
+    height: 250px !important; }
+  #left_messenger_sidebar #left_main_section .media .media-body p {
+    max-width: 100% !important; } }
+
 /* Smarth Phones */
 @media screen and (min-width: 481px) and (max-width: 767px) {
   #main_navigation {
@@ -31,15 +44,40 @@
       display: block;
       margin: 0 auto !important; }
     #main_navigation .navbar-nav li .admin {
-      margin: 0px !important; } }
+      margin: 0px !important; }
+  #left_messenger_sidebar {
+    margin-top: -5px !important;
+    width: 100% !important; }
+    #left_messenger_sidebar .scrollbar {
+      height: 650px !important; }
+    #left_messenger_sidebar #left_main_section .media .media-body p {
+      max-width: 100% !important; }
+  #wrapper {
+    display: none; } }
 
 /* Smarth Phones Landscape */
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  #left_messenger_sidebar {
+    margin-top: -5px !important;
+    width: 100% !important; }
+    #left_messenger_sidebar .scrollbar {
+      height: 350px !important; } }
+
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #main_navigation .navbar-nav li .admin {
     margin-right: 10px !important; }
   #main_navigation .navbar-nav li .home {
-    margin-right: 0px !important; } }
+    margin-right: 0px !important; }
+  #left_messenger_sidebar {
+    margin-top: 0px !important;
+    width: 100% !important; }
+    #left_messenger_sidebar .scrollbar {
+      height: 650px !important; }
+    #left_messenger_sidebar #left_main_section .media .media-body p {
+      max-width: 100% !important; }
+  #wrapper {
+    display: none; } }
 
 /* Tablets Landscape */
 /* Laptops */
@@ -178,9 +216,11 @@ body {
           float: right;
           font-size: 12px;
           color: #178ed3; }
-      #left_messenger_sidebar #left_main_section .media-body .dropdown .dropdown-menu {
-        margin-left: 70px;
-        margin-top: 20px; }
+      #left_messenger_sidebar #left_main_section .media-body .dropdown {
+        display: block;
+        float: right; }
+        #left_messenger_sidebar #left_main_section .media-body .dropdown .dropdown-menu {
+          margin-left: -150px !important; }
       #left_messenger_sidebar #left_main_section .media-body p {
         float: left;
         max-width: 200px; }
