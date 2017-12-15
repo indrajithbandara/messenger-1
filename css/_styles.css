@@ -14,10 +14,24 @@
       margin: 0px !important; }
   #left_messenger_sidebar {
     margin-top: 0px !important;
-    width: 100% !important; }
+    width: 100% !important;
+    display: none; }
     #left_messenger_sidebar .scrollbar {
       height: 350px !important; }
-  #wrapper {
+  #wrapper #main_content_messenger {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: 100% !important; }
+    #wrapper #main_content_messenger #messages {
+      height: 220px !important; }
+      #wrapper #main_content_messenger #messages::-webkit-scrollbar-thumb {
+        height: 100px !important; }
+    #wrapper #main_content_messenger #compose_message a {
+      padding: 0px !important; }
+    #wrapper #main_content_messenger #add_section {
+      padding: 0px !important;
+      font-size: 32px; }
+  #wrapper #right_messenger_sidebar {
     display: none; } }
 
 /* Small Screens Landscape */
@@ -25,7 +39,17 @@
   #left_messenger_sidebar .scrollbar {
     height: 250px !important; }
   #left_messenger_sidebar #left_main_section .media .media-body p {
-    max-width: 100% !important; } }
+    max-width: 100% !important; }
+  #wrapper #main_content_messenger #messages {
+    height: 70px !important; }
+    #wrapper #main_content_messenger #messages::-webkit-scrollbar-thumb {
+      height: 30px !important; }
+  #wrapper #main_content_messenger #compose_message {
+    padding: 5px !important; }
+    #wrapper #main_content_messenger #compose_message a {
+      padding: 0px !important; }
+  #wrapper #main_content_messenger #add_section {
+    padding: 0px !important; } }
 
 /* Smarth Phones */
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -47,12 +71,23 @@
       margin: 0px !important; }
   #left_messenger_sidebar {
     margin-top: -5px !important;
-    width: 100% !important; }
+    width: 100% !important;
+    display: none; }
     #left_messenger_sidebar .scrollbar {
       height: 650px !important; }
     #left_messenger_sidebar #left_main_section .media .media-body p {
       max-width: 100% !important; }
-  #wrapper {
+  #wrapper #main_content_messenger {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: 100% !important; }
+    #wrapper #main_content_messenger #messages {
+      height: 480px !important; }
+      #wrapper #main_content_messenger #messages::-webkit-scrollbar-thumb {
+        height: 100px !important; }
+    #wrapper #main_content_messenger #add_section {
+      font-size: 36px; }
+  #wrapper #right_messenger_sidebar {
     display: none; } }
 
 /* Smarth Phones Landscape */
@@ -61,7 +96,17 @@
     margin-top: -5px !important;
     width: 100% !important; }
     #left_messenger_sidebar .scrollbar {
-      height: 350px !important; } }
+      height: 350px !important; }
+  #wrapper #main_content_messenger {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: 100% !important; }
+    #wrapper #main_content_messenger #messages {
+      height: 200px !important; }
+      #wrapper #main_content_messenger #messages::-webkit-scrollbar-thumb {
+        height: 100px !important; }
+    #wrapper #main_content_messenger #add_section {
+      font-size: 36px; } }
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -71,15 +116,38 @@
     margin-right: 0px !important; }
   #left_messenger_sidebar {
     margin-top: 0px !important;
-    width: 100% !important; }
+    width: 100% !important;
+    display: none; }
     #left_messenger_sidebar .scrollbar {
       height: 650px !important; }
     #left_messenger_sidebar #left_main_section .media .media-body p {
       max-width: 100% !important; }
-  #wrapper {
+  #wrapper #main_content_messenger {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: 100% !important; }
+    #wrapper #main_content_messenger #messages {
+      height: 725px !important; }
+      #wrapper #main_content_messenger #messages::-webkit-scrollbar-thumb {
+        height: 100px !important; }
+    #wrapper #main_content_messenger #add_section {
+      font-size: 50px; }
+  #wrapper #right_messenger_sidebar {
     display: none; } }
 
 /* Tablets Landscape */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #wrapper #main_content_messenger {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    width: 100% !important; }
+    #wrapper #main_content_messenger #messages {
+      height: 480px !important; }
+      #wrapper #main_content_messenger #messages::-webkit-scrollbar-thumb {
+        height: 100px !important; }
+    #wrapper #main_content_messenger #add_section {
+      font-size: 50px; } }
+
 /* Laptops */
 /* Laptops Landscape */
 body {

@@ -26,12 +26,35 @@ and ( max-width: 480px ){
 	#left_messenger_sidebar{
 		margin-top: 0px !important;
 		width: 100% !important;
+		display: none;
 		.scrollbar{
 			height: 350px !important;
 		}
 	}
 	#wrapper{
-		display: none;
+		#main_content_messenger{
+			padding-right: 0px !important;
+			padding-left: 0px !important;
+			width: 100% !important;
+			#messages{
+				height: 220px !important;
+				&::-webkit-scrollbar-thumb{
+					height: 100px !important;
+				}
+			}
+			#compose_message{
+				a{
+					padding: 0px !important;
+				}
+			}
+			#add_section{
+				padding: 0px !important;
+				font-size: 32px;
+			}
+		}
+		#right_messenger_sidebar{
+			display: none;
+		}
 	}
 }
 
@@ -51,6 +74,25 @@ and ( orientation: landscape ){
 						max-width: 100% !important;
 					}
 				}
+			}
+		}
+	}
+	#wrapper{
+		#main_content_messenger{
+			#messages{
+				height: 70px !important;
+				&::-webkit-scrollbar-thumb{
+					height: 30px !important;
+				}
+			}
+			#compose_message{
+				padding: 5px !important;
+				a{
+					padding: 0px !important;
+				}
+			}
+			#add_section{
+				padding: 0px !important;
 			}
 		}
 	}
@@ -89,6 +131,7 @@ and ( max-width: 767px ){
 	#left_messenger_sidebar{
 		margin-top: -5px !important;
 		width: 100% !important;
+		display: none;
 		.scrollbar{
 			height: 650px !important;
 		}
@@ -103,7 +146,23 @@ and ( max-width: 767px ){
 		}
 	}
 	#wrapper{
-		display: none;
+		#main_content_messenger{
+			padding-right: 0px !important;
+			padding-left: 0px !important;
+			width: 100% !important;
+			#messages{
+				height: 480px !important;
+				&::-webkit-scrollbar-thumb{
+					height: 100px !important;
+				}
+			}
+			#add_section{
+				font-size: 36px;
+			}
+		}
+		#right_messenger_sidebar{
+			display: none;
+		}
 	}
 }
 
@@ -117,6 +176,22 @@ and ( orientation: landscape ){
 		width: 100% !important;
 		.scrollbar{
 			height: 350px !important;
+		}
+	}
+	#wrapper{
+		#main_content_messenger{
+			padding-right: 0px !important;
+			padding-left: 0px !important;
+			width: 100% !important;
+			#messages{
+				height: 200px !important;
+				&::-webkit-scrollbar-thumb{
+					height: 100px !important;
+				}
+			}
+			#add_section{
+				font-size: 36px;
+			}
 		}
 	}
 }
@@ -140,6 +215,7 @@ and ( max-width: 1024px ){
 	#left_messenger_sidebar{
 		margin-top: 0px !important;
 		width: 100% !important;
+		display: none;
 		.scrollbar{
 			height: 650px !important;
 		}
@@ -154,7 +230,23 @@ and ( max-width: 1024px ){
 		}
 	}
 	#wrapper{
-		display: none;
+		#main_content_messenger{
+			padding-right: 0px !important;
+			padding-left: 0px !important;
+			width: 100% !important;
+			#messages{
+				height: 725px !important;
+				&::-webkit-scrollbar-thumb{
+					height: 100px !important;
+				}
+			}
+			#add_section{
+				font-size: 50px;
+			}
+		}
+		#right_messenger_sidebar{
+			display: none;
+		}
 	}
 }
 
@@ -163,7 +255,22 @@ and ( max-width: 1024px ){
 and ( min-width: 768px )
 and ( max-width: 1024px )
 and ( orientation: landscape ){
-	
+	#wrapper{
+		#main_content_messenger{
+			padding-right: 0px !important;
+			padding-left: 0px !important;
+			width: 100% !important;
+			#messages{
+				height: 480px !important;
+				&::-webkit-scrollbar-thumb{
+					height: 100px !important;
+				}
+			}
+			#add_section{
+				font-size: 50px;
+			}
+		}
+	}
 }
 
 /* Laptops */
