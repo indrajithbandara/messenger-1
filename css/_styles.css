@@ -32,7 +32,24 @@
       padding: 0px !important;
       font-size: 32px; }
   #wrapper #right_messenger_sidebar {
-    display: none; } }
+    margin-top: 44px !important;
+    background-color: #ffffff;
+    z-index: 1; }
+    #wrapper #right_messenger_sidebar #sidebar_top_section a {
+      font-size: 26px; }
+    #wrapper #right_messenger_sidebar #options {
+      padding: 2px !important; }
+      #wrapper #right_messenger_sidebar #options input {
+        padding: 3px !important; }
+    #wrapper #right_messenger_sidebar #participants {
+      padding: 10px 5px !important; }
+    #wrapper #right_messenger_sidebar #recent {
+      padding: 5px 2px !important;
+      height: 185px !important; }
+      #wrapper #right_messenger_sidebar #recent img {
+        display: block;
+        margin: 0 auto;
+        height: 100px !important; } }
 
 /* Small Screens Landscape */
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
@@ -49,7 +66,22 @@
     #wrapper #main_content_messenger #compose_message a {
       padding: 0px !important; }
   #wrapper #main_content_messenger #add_section {
-    padding: 0px !important; } }
+    padding: 0px !important; }
+  #wrapper #right_messenger_sidebar {
+    width: 400px; }
+    #wrapper #right_messenger_sidebar #sidebar_top_section {
+      padding: 0px !important; }
+    #wrapper #right_messenger_sidebar #options {
+      padding: 0px !important; }
+    #wrapper #right_messenger_sidebar #participants {
+      padding: 2px 5px !important; }
+    #wrapper #right_messenger_sidebar #recent {
+      padding: 0px 2px !important;
+      height: 165px !important; }
+      #wrapper #right_messenger_sidebar #recent img {
+        display: block;
+        margin: 0 auto;
+        height: 100px !important; } }
 
 /* Smarth Phones */
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -88,7 +120,12 @@
     #wrapper #main_content_messenger #add_section {
       font-size: 36px; }
   #wrapper #right_messenger_sidebar {
-    display: none; } }
+    margin-top: 44px !important;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 400px; }
+    #wrapper #right_messenger_sidebar #participants {
+      padding: 43px 5px !important; } }
 
 /* Smarth Phones Landscape */
 @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
@@ -106,7 +143,11 @@
       #wrapper #main_content_messenger #messages::-webkit-scrollbar-thumb {
         height: 100px !important; }
     #wrapper #main_content_messenger #add_section {
-      font-size: 36px; } }
+      font-size: 36px; }
+  #wrapper #right_messenger_sidebar {
+    width: 500px; }
+    #wrapper #right_messenger_sidebar #participants {
+      padding: 20px 5px !important; } }
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -133,7 +174,13 @@
     #wrapper #main_content_messenger #add_section {
       font-size: 50px; }
   #wrapper #right_messenger_sidebar {
-    display: none; } }
+    margin-top: 44px !important;
+    background-color: #ffffff;
+    height: 100%;
+    z-index: 1;
+    width: 500px; }
+    #wrapper #right_messenger_sidebar #recent {
+      height: 60%; } }
 
 /* Tablets Landscape */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -146,7 +193,9 @@
       #wrapper #main_content_messenger #messages::-webkit-scrollbar-thumb {
         height: 100px !important; }
     #wrapper #main_content_messenger #add_section {
-      font-size: 50px; } }
+      font-size: 50px; }
+  #wrapper #right_messenger_sidebar #recent {
+    height: 43%; } }
 
 /* Laptops */
 /* Laptops Landscape */

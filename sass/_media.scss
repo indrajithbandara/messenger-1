@@ -53,7 +53,32 @@ and ( max-width: 480px ){
 			}
 		}
 		#right_messenger_sidebar{
-			display: none;
+			margin-top: 44px !important;
+			background-color: $white;
+			z-index: 1;
+			#sidebar_top_section{
+				a{
+					font-size: 26px;
+				}
+			}
+			#options{
+				padding: 2px !important;
+				input{
+					padding: 3px !important;
+				}
+			}
+			#participants{
+				padding: 10px 5px !important;
+			}
+			#recent{
+				padding: 5px 2px !important;
+				height: 185px !important;
+				img{
+					display: block;
+					margin: 0 auto;
+					height: 100px !important;
+				}
+			}
 		}
 	}
 }
@@ -93,6 +118,27 @@ and ( orientation: landscape ){
 			}
 			#add_section{
 				padding: 0px !important;
+			}
+		}
+		#right_messenger_sidebar{
+			width: 400px;
+			#sidebar_top_section{
+				padding: 0px !important;
+			}
+			#options{
+				padding: 0px !important;
+			}
+			#participants{
+				padding: 2px 5px !important;
+			}
+			#recent{
+				padding: 0px 2px !important;
+				height: 165px !important;
+				img{
+					display: block;
+					margin: 0 auto;
+					height: 100px !important;
+				}
 			}
 		}
 	}
@@ -161,7 +207,13 @@ and ( max-width: 767px ){
 			}
 		}
 		#right_messenger_sidebar{
-			display: none;
+			margin-top: 44px !important;
+			background-color: $white;
+			z-index: 1;
+			width: 400px;
+			#participants{
+				padding: 43px 5px !important;
+			}
 		}
 	}
 }
@@ -191,6 +243,12 @@ and ( orientation: landscape ){
 			}
 			#add_section{
 				font-size: 36px;
+			}
+		}
+		#right_messenger_sidebar{
+			width: 500px;
+			#participants{
+				padding: 20px 5px !important;
 			}
 		}
 	}
@@ -245,7 +303,14 @@ and ( max-width: 1024px ){
 			}
 		}
 		#right_messenger_sidebar{
-			display: none;
+			margin-top: 44px !important;
+			background-color: $white;
+			height: 100%;
+			z-index: 1;
+			width: 500px;
+			#recent{
+				height: 60%;
+			}
 		}
 	}
 }
@@ -268,6 +333,11 @@ and ( orientation: landscape ){
 			}
 			#add_section{
 				font-size: 50px;
+			}
+		}
+		#right_messenger_sidebar{
+			#recent{
+				height: 43%;
 			}
 		}
 	}
